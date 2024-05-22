@@ -9,8 +9,9 @@
 		"build:dev": "cross-env NODE_ENV=dev && npm run build",
 		"build:stage": "cross-env NODE_ENV=stage && npm run build",
 		"build:prod": "cross-env NODE_ENV=prod && npm run build",
-		"dev": "NODE_ENV=dev nodemon --ext 'ts,json' --ignore dist --exec 'tsc && npm run build && node ./dist/index'"
+		"dev": "NODE_ENV=dev nodemon --ext 'ts,json' --ignore dist --exec 'npm run build && node ./dist/index'"
 	},
+	"type": "module",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",

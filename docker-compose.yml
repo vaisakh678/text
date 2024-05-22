@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+    text-web:
+        build: ./text
+        ports:
+            - "5173:80"
+        environment:
+            - NODE_ENV=dev
+
+    text-api:
+        build: ./text-api
+        ports:
+            - 3000:3000
