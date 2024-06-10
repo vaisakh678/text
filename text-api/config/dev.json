@@ -1,3 +1,7 @@
 {
-	"PORT": 3000
+	"PORT": 3000,
+	"secreteKeys": {
+		"accessToken": "fljsdjfsjfjwao",
+		"refreshToken": "fljsdjfsjfjwao"
+	}
 }

@@ -1,9 +1,9 @@
 FROM node:20.12.0
 WORKDIR /usr/src/build
 COPY package.json package-lock.json ./
-ENV NODE_ENV=dev
+ENV env=dev
 RUN npm i
 COPY ./ ./
-RUN npm run build:dev
+RUN npm run build
 EXPOSE 3000
-CMD [ "node", "./dist/index.js" ]
+CMD ["sh", "-c", "npm run start:$env"]

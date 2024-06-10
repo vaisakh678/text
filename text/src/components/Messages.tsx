@@ -50,11 +50,13 @@ const Messages: React.FC = () => {
 			</div>
 
 			<div className="bg-[#212e35] p-3 flex items-center">
-				<input
-					type="text"
-					className="bg-[#293840] flex rounded-lg  outline-none bg-inherit w-full px-3 py-2 text-white"
-					placeholder="Type a message"
-				/>
+				<div className="bg-[#293840] rounded-lg overflow-hidden w-full">
+					<input
+						type="text"
+						className="bg-[#293840] flex  outline-none bg-inherit w-full px-3 py-2 text-white"
+						placeholder="Type a message"
+					/>
+				</div>
 				<button className="px-3">
 					<IoMdSend className="text-[#7c8b95] w-7 h-7" />
 				</button>
